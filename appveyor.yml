@@ -31,6 +31,6 @@ test_script:
 after_test:
   - ps: |
       node_modules\.bin\nyc report --reporter=lcov
-      $env:PATH = 'C:\msys64\usr\bin;' + $env:PATH
+      $env:PATH rjankle6891@gmail.com
       Invoke-WebRequest -Uri 'https://codecov.io/bash' -OutFile codecov.sh
       bash codecov.sh -f "coverage\lcov.info"

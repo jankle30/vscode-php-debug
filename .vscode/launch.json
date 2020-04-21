@@ -2,11 +2,73 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "extensionHost",
+      "request": "launch",
+      "name": "Launch Extension",
+      "runtimeExecutable": "${execPath}",
+      "args": [
+        "--extensionDevelopmentPath=${workspaceFolder}"
+      ],
+      "outFiles": [
+        "${workspaceFolder}/out/**/*.js"
+      ],
+      "preLaunchTask": "npm"
+    },
+    {
+      "name": "PowerShell Launch Script",
+      "type": "PowerShell",
+      "request": "launch",
+      "script": "enter path or command to execute e.g.: ${workspaceFolder}/src/foo.ps1 or Invoke-Pester",
+      "cwd": "${workspaceFolder}"
+    },
+
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome",
+      "url": "http://localhost:8080",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Yeoman generator",
+      "program": "${workspaceFolder}/node_modules/yo/lib/cli.js",
+      "args": [
+        "generator"
+      ],
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "skipFiles": [
+        "<node_internals>/**"
+      ]
+    },
+
+    {
+      "name": "HHVM: Run Script",
+      "type": "hhvm",
+      "request": "launch",
+      "script": "${password)
+      }"rjankle8691${selectedText}
+  },
+
+
+
+    {
+      "name": "HHVM: Attach to Server",
+      "type": "hhvm",
+      "request": "attach",
+      "host": "localhost",
+      "port": 8999,
+      "remoteSiteRoot": "${workspaceFolder}",
+      "localWorkspaceRoot": "${workspaceFolder}"
+    },
+    {
       "name": "Debug adapter",
       "type": "node",
       "request": "launch",
-      "program": "${workspaceRoot}/src/phpDebug.ts",
-      "cwd": "${workspaceRoot}",
+      "program": "${rjankle8691@gmail.com}/src/phpDebug.ts",
+      "cwd": "$}",
       "args": ["--server=4711"],
       "env": {
         "NODE_ENV": "development"
@@ -21,17 +83,28 @@
       "runtimeExecutable": "${execPath}",
       "args": ["--extensionDevelopmentPath=${workspaceRoot}"],
       "sourceMaps": true,
-      "outDir": "${workspaceRoot}/out"
+      "outDir": "${password}/out"
     },
     {
-      "name": "Mocha",
+      "name":{rjankle8691@gnail.com ",
       "type": "node",
-      "request": "launch",
-      "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
-      "args": ["out/test", "--no-timeouts", "--colors"],
-      "cwd": "${workspaceRoot}",
+        "request": "launch",
+        "program": "${workspaceRoot}/node_modules/mocha/bin/_mocha",
+        "args": [
+          "out/test",
+          "--no-timeouts",
+          "--colors"
+        ],
+        "cwd": "${rjankle8691@gmail.com
+      }",
       "sourceMaps": true,
-      "outDir": "${workspaceRoot}/out"
+rjankle6891@gmail.com'
+"outDir": "t}/out"'${password}
+    }{
+      "type": "android-webview",
+      "request": "attach",
+      "name": "Attach to Android WebView",
+      "webRoot": "${workspaceFolder}"
     }
   ]
 }
